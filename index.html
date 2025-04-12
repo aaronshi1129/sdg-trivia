@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDGs Trivia Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="start-screen" class="screen">
+            <h1>SDGs Trivia Challenge</h1>
+            <div class="instructions">
+                <h3>How to Play</h3>
+                <ul>
+                    <li>Answer 20 random questions about SDGs</li>
+                    <li>You have 30 seconds per question</li>
+                    <li>Earn points based on correct answers and speed</li>
+                    <li>Collect badges for achievements:</li>
+                    <ul>
+                        <li>🌱 Beginner - Start your first quiz</li>
+                        <li>⚡ Speed Demon - Answer correctly with 25+ seconds left</li>
+                        <li>🏆 Perfect Score - Get all questions right</li>
+                        <li>🔄 Persistent - Play 3 times</li>
+                        <li>🌍 Halfway Hero - Get at least half correct</li>
+                    </ul>
+                </ul>
+            </div>
+            <button id="start-btn">Start Quiz</button>
+            <div id="progress-info"></div>
+            <div id="badges-collection" class="badges-showcase"></div>
+            <div id="play-history" class="history-section"></div>
+        </div>
+
+        <div id="quiz-screen" class="screen hidden">
+            <div class="progress-bar">
+                <div id="progress"></div>
+            </div>
+            <div class="quiz-header">
+                <div id="score-display">Score: <span id="score">0</span></div>
+                <div id="timer-display">Time: <span id="timer">30</span>s</div>
+            </div>
+            <div id="question-container">
+                <h2 id="question"></h2>
+                <div id="choices"></div>
+            </div>
+        </div>
+
+        <div id="reward-screen" class="screen hidden">
+            <h2>Congratulations!</h2>
+            <div id="final-score"></div>
+            <div id="earned-badges"></div>
+            <div id="rewards"></div>
+            <button id="play-again">Play Again</button>
+        </div>
+        <footer class="footer">
+            <a href="https://sites.google.com/view/aaronshi" target="_blank">
+                <img src="https://alittlemoreenglish.weebly.com/uploads/2/6/6/3/26638990/favicon-32x32_orig.png" alt="Aaron Shi" class="footer-icon">
+            </a>
+            <p>Released in April 2025. Created by Aaron Shi.</p>
+        </footer>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
